@@ -1,11 +1,8 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import ImageInfo from "components/ImageInfo";
-import Enzyme, { mount } from "enzyme";
+import { mount } from "enzyme";
 import "jsdom-global/register";
 import { infoEnum } from "models";
 import React from "react";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe("ImageInfo", () => {
   it("renders without crashing", () => {

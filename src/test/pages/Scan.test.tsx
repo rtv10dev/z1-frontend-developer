@@ -1,6 +1,5 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import { validateDocument } from "api/evaluation";
-import Enzyme, { mount } from "enzyme";
+import { mount } from "enzyme";
 import "jsdom-global/register";
 import { Scan } from "pages";
 import React from "react";
@@ -31,7 +30,6 @@ jest.mock("api/evaluation", () => ({
   validateDocument: jest.fn(() => Promise.resolve(responseMockError)),
 }));
 
-Enzyme.configure({ adapter: new Adapter() });
 describe("Scan", () => {
   it("renders without crashing", () => {
     const wrapper = mount(<Scan />);

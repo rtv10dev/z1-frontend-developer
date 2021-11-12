@@ -1,10 +1,7 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Camera from "components/Camera";
-import Enzyme, { mount } from "enzyme";
+import { mount } from "enzyme";
 import "jsdom-global/register";
 import React from "react";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 const mockOnCanPlay = jest.fn();
 const propsMock = {

@@ -1,5 +1,4 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import Enzyme, { mount } from "enzyme";
+import { mount } from "enzyme";
 import "jsdom-global/register";
 import { Home } from "pages";
 import React from "react";
@@ -17,7 +16,6 @@ jest.mock("react-router-dom", () => ({
 
 jest.mock("assets/icon/id-card.svg", () => <div>ID card</div>);
 
-Enzyme.configure({ adapter: new Adapter() });
 describe("Home", () => {
   it("renders without crashing", () => {
     const wrapper = mount(<Home />);

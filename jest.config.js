@@ -7,4 +7,5 @@ module.exports = {
   },
   transformIgnorePatterns: ["node_modules/(?!variables/.*)"],
   moduleDirectories: ["node_modules", "src"],
+  setupFilesAfterEnv: ["./jest.setup.js"],
 };

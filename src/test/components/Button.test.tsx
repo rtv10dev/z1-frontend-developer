@@ -1,10 +1,7 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Button from "components/Button";
-import Enzyme, { mount } from "enzyme";
+import { mount } from "enzyme";
 import "jsdom-global/register";
 import React from "react";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe("Button", () => {
   it("renders without crashing", () => {
