@@ -1,0 +1,14 @@
+.camera__border {
+  border-radius: 18px;
+  border: 2px solid transparent;
+}
+
+.camera__border-success {
+  border-radius: 18px;
+  border: 2px solid $colorsuccess;
+}
+
+.camera__border-error {
+  border-radius: 18px;
+  border: 2px solid $colorerror;
+}
